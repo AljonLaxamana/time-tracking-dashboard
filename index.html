@@ -1,80 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/script.js" defer></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-  Report for
-  Jeremy Robson
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: 5rem;
+        margin-bottom: -4rem;
+      }
+      .attribution a {
+        color: hsl(228, 100%, 87%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="dashboard-container">
+      <!-- Profile -->
+      <article class="dashboard-profile">
+        <div class="profile-header">
+          <img src="/images/image-jeremy.png" alt="" class="profile-img" />
+          <div class="profile-information-container">
+            <p class="profile-label">Report for</p>
+            <p class="profile-name">Jeremy Robson</p>
+          </div>
+        </div>
+        <div class="profile-filter-subheader">
+          <ul class="profile-filter-container">
+            <li class="profile-daily-filter">Daily</li>
+            <li class="profile-weekly-filter">Weekly</li>
+            <li class="profile-monthly-filter">Monthly</li>
+          </ul>
+        </div>
+      </article>
 
-  Daily
-  Weekly
-  Monthly
+      <!-- Work Category -->
+      <article class="dashboard-category">
+        <div class="category-header">
+          <img src="/images/icon-work.svg" alt="" />
+        </div>
+        <div class="category-body">
+          <div class="category-title-container">
+            <p class="category-title">Work</p>
+            <img src="/images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="category-timeframes-container">
+            <p class="total-hrs">32hrs</p>
+            <p class="previous-hrs">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </article>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+      <!-- Play Category -->
+      <article class="dashboard-category">
+        <div class="category-header">
+          <img src="/images/icon-play.svg" alt="" />
+        </div>
+        <div class="category-body">
+          <div class="category-title-container">
+            <p class="category-title">Work</p>
+            <img src="/images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="category-timeframes-container">
+            <p class="total-hrs">32hrs</p>
+            <p class="previous-hrs">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </article>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+      <!-- Study Category -->
+      <article class="dashboard-category">
+        <div class="category-header">
+          <img src="/images/icon-study.svg" alt="" />
+        </div>
+        <div class="category-body">
+          <div class="category-title-container">
+            <p class="category-title">Work</p>
+            <img src="/images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="category-timeframes-container">
+            <p class="total-hrs">32hrs</p>
+            <p class="previous-hrs">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </article>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+      <!-- Exercise Category -->
+      <article class="dashboard-category">
+        <div class="category-header">
+          <img src="/images/icon-exercise.svg" alt="" />
+        </div>
+        <div class="category-body">
+          <div class="category-title-container">
+            <p class="category-title">Work</p>
+            <img src="/images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="category-timeframes-container">
+            <p class="total-hrs">32hrs</p>
+            <p class="previous-hrs">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </article>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+      <!-- Social Category -->
+      <article class="dashboard-category">
+        <div class="category-header">
+          <img src="/images/icon-social.svg" alt="" />
+        </div>
+        <div class="category-body">
+          <div class="category-title-container">
+            <p class="category-title">Work</p>
+            <img src="/images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="category-timeframes-container">
+            <p class="total-hrs">32hrs</p>
+            <p class="previous-hrs">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </article>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+      <!-- Self Care Category -->
+      <article class="dashboard-category">
+        <div class="category-header">
+          <img src="/images/icon-self-care.svg" alt="" />
+        </div>
+        <div class="category-body">
+          <div class="category-title-container">
+            <p class="category-title">Work</p>
+            <img src="/images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="category-timeframes-container">
+            <p class="total-hrs">32hrs</p>
+            <p class="previous-hrs">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </article>
+    </main>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Aljon Laxamana</a>.
+    </div>
+  </body>
 </html>

@@ -1,0 +1,324 @@
+/* CSS Reset */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Default Styles */
+
+:root {
+  /* Primary Colors */
+  --prm-blue: hsl(246, 80%, 60%);
+  --prm-light-red-work: hsl(15, 100%, 70%);
+  --prm-soft-blue-play: hsl(195, 74%, 62%);
+  --prm-light-red-study: hsl(348, 100%, 68%);
+  --prm-lime-green-excercise: hsl(145, 58%, 55%);
+  --prm-violet-social: hsl(264, 64%, 52%);
+  --prm-soft-orange-self-care: hsl(43, 84%, 65%);
+
+  /* Neutral Colors */
+
+  --neu-very-dark-blue: hsl(226, 43%, 10%);
+  --neu-dark-blue: hsl(235, 46%, 20%);
+  --neu-desaturated-blue: hsl(235, 45%, 61%);
+  --neu-pale-blue: hsl(236, 100%, 87%);
+}
+
+/* General Styles */
+body {
+  font-size: 18px;
+  font-family: "Rubik", serif;
+  display: grid;
+  place-items: center;
+  background-color: var(--neu-very-dark-blue);
+  color: var(--neu-desaturated-blue);
+  font-weight: 300;
+  padding: 5rem 1.5rem;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+}
+
+.dashboard-profile {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neu-dark-blue);
+  border-radius: 15px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--prm-blue);
+  padding: 2rem;
+  border-radius: 15px;
+  color: white;
+}
+
+.profile-information-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.profile-header > img {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.profile-label {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.profile-name {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.profile-filter-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--neu-dark-blue);
+  border-end-start-radius: 15px;
+  border-end-end-radius: 15px;
+}
+
+.profile-filter-container > li {
+  transition: all ease-in-out 250ms;
+}
+
+.profile-filter-container > li:hover {
+  color: white;
+}
+
+.dashboard-category {
+  border-radius: 15px;
+}
+
+.category-header {
+  height: 2.5em;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.category-header > img {
+  position: relative;
+  top: -0.3rem;
+  left: 13em;
+
+  transition: all ease-in-out 250ms;
+}
+
+.category-body {
+  border-radius: 13px;
+  background-color: var(--neu-dark-blue);
+  padding: 1.5em;
+  color: white;
+
+  transition: all ease-in-out 250ms;
+}
+
+.category-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-container > .dashboard-category:nth-child(2) {
+  background-color: var(--prm-light-red-work);
+}
+
+.dashboard-container > .dashboard-category:nth-child(3) {
+  background-color: var(--prm-soft-blue-play);
+}
+
+.dashboard-container > .dashboard-category:nth-child(4) {
+  background-color: var(--prm-light-red-study);
+}
+
+.dashboard-container > .dashboard-category:nth-child(5) {
+  background-color: var(--prm-lime-green-excercise);
+}
+
+.dashboard-container > .dashboard-category:nth-child(6) {
+  background-color: var(--prm-violet-social);
+}
+
+.dashboard-container > .dashboard-category:nth-child(7) {
+  background-color: var(--prm-soft-orange-self-care);
+}
+
+.total-hrs {
+  margin-top: 1rem;
+  font-size: 2em;
+}
+
+.previous-hrs {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.dashboard-category:hover > .category-header > img {
+  opacity: 0;
+}
+
+.dashboard-category:hover > .category-body {
+  transform: translateY(-17%);
+  background-color: inherit;
+  color: initial;
+}
+
+.dashboard-category:hover > .category-body > .category-title-container > img {
+  filter: brightness(0) saturate(100%) invert(6%) sepia(7%) saturate(6810%)
+    hue-rotate(193deg) brightness(95%) contrast(95%);
+}
+
+@media (min-width: 760px) {
+  .dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile-filter-container {
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+
+  .dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .dashboard-profile {
+    grid-row: 1 / span 2;
+  }
+
+  .profile-header {
+    padding: 2em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 70%;
+    gap: 1.5em;
+  }
+
+  .profile-name {
+    max-width: 8rem;
+    font-size: 2em;
+  }
+
+  .profile-filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 16px;
+    gap: 0.5em;
+    padding: 1.4em 1.5em;
+  }
+
+  .category-title-container > img {
+    left: 0em;
+  }
+
+  .attribution {
+    margin: 0;
+    position: absolute;
+  }
+}
