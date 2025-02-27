@@ -21,23 +21,6 @@
     <script src="/script.js" defer></script>
 
     <title>Frontend Mentor | Time tracking dashboard</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-        position: relative;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin-top: 5rem;
-        margin-bottom: -4rem;
-      }
-      .attribution a {
-        color: hsl(228, 100%, 87%);
-      }
-    </style>
   </head>
   <body>
     <main class="dashboard-container">
@@ -52,36 +35,36 @@
         </div>
         <div class="profile-filter-subheader">
           <ul class="profile-filter-container">
-            <li class="profile-daily-filter">Daily</li>
-            <li class="profile-weekly-filter">Weekly</li>
-            <li class="profile-monthly-filter">Monthly</li>
+            <li class="profile-filter active" data-id="daily">Daily</li>
+            <li class="profile-filter" data-id="weekly">Weekly</li>
+            <li class="profile-filter" data-id="monthly">Monthly</li>
           </ul>
         </div>
       </article>
 
       <!-- Work Category -->
-      <article class="dashboard-category">
+      <article class="dashboard-category" id="container-1">
         <div class="category-header">
           <img src="/images/icon-work.svg" alt="" />
         </div>
-        <div class="category-body">
+        <!-- <div class="category-body">
           <div class="category-title-container">
             <p class="category-title">Work</p>
             <img src="/images/icon-ellipsis.svg" alt="" />
           </div>
           <div class="category-timeframes-container">
-            <p class="total-hrs">32hrs</p>
+            <p class="total-hrs"></p>
             <p class="previous-hrs">Last Week - 36hrs</p>
           </div>
-        </div>
+        </div> -->
       </article>
 
       <!-- Play Category -->
-      <article class="dashboard-category">
+      <article class="dashboard-category" id="container-2">
         <div class="category-header">
           <img src="/images/icon-play.svg" alt="" />
         </div>
-        <div class="category-body">
+        <!-- <div class="category-body">
           <div class="category-title-container">
             <p class="category-title">Work</p>
             <img src="/images/icon-ellipsis.svg" alt="" />
@@ -90,32 +73,32 @@
             <p class="total-hrs">32hrs</p>
             <p class="previous-hrs">Last Week - 36hrs</p>
           </div>
-        </div>
+        </div> -->
       </article>
 
       <!-- Study Category -->
-      <article class="dashboard-category">
+      <article class="dashboard-category" id="container-3">
         <div class="category-header">
           <img src="/images/icon-study.svg" alt="" />
         </div>
-        <div class="category-body">
-          <div class="category-title-container">
+        <!-- <div class="category-body">
+         <div class="category-title-container">
             <p class="category-title">Work</p>
             <img src="/images/icon-ellipsis.svg" alt="" />
           </div>
           <div class="category-timeframes-container">
             <p class="total-hrs">32hrs</p>
             <p class="previous-hrs">Last Week - 36hrs</p>
-          </div>
-        </div>
+          </div> 
+        </div> -->
       </article>
 
       <!-- Exercise Category -->
-      <article class="dashboard-category">
+      <article class="dashboard-category" id="container-4">
         <div class="category-header">
           <img src="/images/icon-exercise.svg" alt="" />
         </div>
-        <div class="category-body">
+        <!-- <div class="category-body">
           <div class="category-title-container">
             <p class="category-title">Work</p>
             <img src="/images/icon-ellipsis.svg" alt="" />
@@ -124,15 +107,15 @@
             <p class="total-hrs">32hrs</p>
             <p class="previous-hrs">Last Week - 36hrs</p>
           </div>
-        </div>
+        </div> -->
       </article>
 
       <!-- Social Category -->
-      <article class="dashboard-category">
+      <article class="dashboard-category" id="container-5">
         <div class="category-header">
           <img src="/images/icon-social.svg" alt="" />
         </div>
-        <div class="category-body">
+        <!-- <div class="category-body">
           <div class="category-title-container">
             <p class="category-title">Work</p>
             <img src="/images/icon-ellipsis.svg" alt="" />
@@ -140,16 +123,16 @@
           <div class="category-timeframes-container">
             <p class="total-hrs">32hrs</p>
             <p class="previous-hrs">Last Week - 36hrs</p>
-          </div>
-        </div>
+          </div> 
+        </div> -->
       </article>
 
       <!-- Self Care Category -->
-      <article class="dashboard-category">
+      <article class="dashboard-category" id="container-6">
         <div class="category-header">
           <img src="/images/icon-self-care.svg" alt="" />
         </div>
-        <div class="category-body">
+        <!-- <div class="category-body">
           <div class="category-title-container">
             <p class="category-title">Work</p>
             <img src="/images/icon-ellipsis.svg" alt="" />
@@ -157,8 +140,8 @@
           <div class="category-timeframes-container">
             <p class="total-hrs">32hrs</p>
             <p class="previous-hrs">Last Week - 36hrs</p>
-          </div>
-        </div>
+          </div> 
+        </div> -->
       </article>
     </main>
 
